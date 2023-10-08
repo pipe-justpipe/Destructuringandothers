@@ -143,10 +143,25 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 
-//Destructuring
+//Destructuring - used when we want to get a data out of an array or object.
 
-const book = getBook(2); 
+const book = getBook(2); //2 is the id
 
 const title = book.title;
-title
+title;
+
+const author = book.author;
+author;
+console.log(author, title);
+
+const thirdBook = getBook(3); //3 is the id
+
+const thirdBookTitle = thirdBook.title;
+thirdBookTitle;
+
+const forthBook = getBook(4); //4 is the id
+
+const author4 = forthBook.author;
+
+author4;
 
