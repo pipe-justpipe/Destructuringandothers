@@ -216,3 +216,10 @@ const {goodreads, librarything} = book.reviews;
 
 goodreads;
 console.log(goodreads, librarything);
+
+
+//TEMPLATE LITERALS
+//Allows creation of strings that contains js variables
+
+const summary = `${title} is a book with ${pages} number of pages was written by ${author}and published in ${publicationDate.split ("-")[0]}`
+summary
