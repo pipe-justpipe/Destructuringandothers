@@ -168,5 +168,35 @@ author4;
 //Destructuring (Object)
 //so instead of using the long method i commented above, we can just do the below
 
-const {title, author} = book;
-console.log(author, title)
+const {title, author,  pages, publicationDate, genres, hasMovieAdaptation, reviews} = book;
+console.log(author, title, pages, publicationDate, genres, hasMovieAdaptation, reviews, hasMovieAdaptation);
+
+/*// Without Destructuring
+const primaryGenre = genres[0];
+const secondaryGenre = genres[1];
+
+// output of the console = science fiction humor
+
+console.log(primaryGenre, secondaryGenre)*/
+
+// With Destructuring
+
+const [primaryGenre, secondaryGenre] = genres;
+console.log(primaryGenre, secondaryGenre) 
+
+//Rest Operator
+// assuming we want to locate other items in the object and we want it to be in an array, we can use the rest operator
+
+const [primary, secondary, ...other] = genres;
+console.log(primary, secondary, other)
+// so the above returns the remaining items of the object in form of an array
+
+
+
+
+//for object, you must always give the items the exact names they bear in the objects as seen below;
+
+const {goodreads, librarything} = book.reviews;
+
+goodreads;
+console.log(goodreads, librarything);

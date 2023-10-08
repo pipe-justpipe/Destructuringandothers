@@ -162,6 +162,8 @@ const data = [
 
 //Object destructuring 
 
-const {title, author} =book;
-console.log(title, author)
+// const {title, author} =book;
+// console.log(title, author)
 
+const {title, author, pages, genres} = book;
+console.log(title, author, pages, genres) 
