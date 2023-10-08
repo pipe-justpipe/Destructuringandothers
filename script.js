@@ -200,8 +200,13 @@ console.log(newGenres)
 // i.e we just added the 'epic fantacy to the items
 
 //Spread Operators for OBJECTS
+//When we want to add new properties or override existing ones, we use the spread operator
 const updatedBook ={
-  ...book, moviePublicationDate: '2021-12-31'
+  ...book,
+  //ADDING A NEW ITEM
+  moviePublicationDate: '2021-12-31',
+  //OVERWRITING AN EXISTING PROPERTY
+  pages:1356
 }
 updatedBook 
 
