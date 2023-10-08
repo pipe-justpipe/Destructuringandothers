@@ -145,6 +145,23 @@ const data = [
   
   const book = getBook(3); 
 
-  const title = book.title;
+//   const title = book.title;
 
-  title; // output = 'Dune'
+  //title; // output = 'Dune'
+
+//   console.log(title);
+
+  const getSecondBook = getBook (2)
+  const title2 = getSecondBook.title
+
+  console.log(title2)
+
+//   const forthBook = getBook(4)
+//   const {title, author} = forthBook
+//   console.log(title, author)
+
+//Object destructuring 
+
+const {title, author} =book;
+console.log(title, author)
+
