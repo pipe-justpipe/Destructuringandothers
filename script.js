@@ -190,9 +190,20 @@ console.log(primaryGenre, secondaryGenre)
 const [primary, secondary, ...other] = genres;
 console.log(primary, secondary, other)
 // so the above returns the remaining items of the object in form of an array
+// the rest element must be the last in the destructuring pattern i.e you can only place the ...whatever at the end of the destructuring item as seen above
 
 
+// Spread Operator for ARRAYS (just like destructuring, it can be used on both arrays and objects)
+// Spread is used to add new items in the array weather in front or at the back
+const newGenres = [...genres, 'epic fantacy']
+console.log(newGenres)
+// i.e we just added the 'epic fantacy to the items
 
+//Spread Operators for OBJECTS
+const updatedBook ={
+  ...book, moviePublicationDate: '2021-12-31'
+}
+updatedBook 
 
 //for object, you must always give the items the exact names they bear in the objects as seen below;
 
