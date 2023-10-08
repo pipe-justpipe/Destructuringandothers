@@ -200,7 +200,7 @@ console.log(newGenres)
 // i.e we just added the 'epic fantacy to the items
 
 //Spread Operators for OBJECTS
-const updatedBook ={//////////////////////////....////..........////////////////////
+const updatedBook ={//////////////////////////....////..........////////////////////...........
   ...book, moviePublicationDate: '2021-12-31'
 }
 updatedBook 
