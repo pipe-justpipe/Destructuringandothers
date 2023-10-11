@@ -206,9 +206,11 @@ const updatedBook ={
   //ADDING A NEW ITEM
   moviePublicationDate: '2021-12-31',
   //OVERWRITING AN EXISTING PROPERTY
-  pages:1356
-}
-updatedBook 
+  pages: 1356,
+};
+updatedBook;
+
+console.log(updatedBook.pages)
 
 //for object, you must always give the items the exact names they bear in the objects as seen below;
 
@@ -221,5 +223,25 @@ console.log(goodreads, librarything);
 //TEMPLATE LITERALS
 //Allows creation of strings that contains js variables
 
-const summary = `${title} is a book with ${pages} number of pages was written by ${author}and published in ${publicationDate.split ("-")[0]}`
+const summary = `${title} is a book with ${pages} number of pages was written by ${author}and published in ${publicationDate.split ("-")[0]} The book has ${hasMovieAdaptation? "" : 'not'} been adapted as a movie`;
 summary
+
+//TERNARIES INSTEAD OF IF ELSE
+
+//it usually has three operands
+
+const pagesRange = updatedBook.pages > 1000 ? 'over a thousand' : 'Less than 1000';
+pagesRange;
+
+console.log(`The book has ${pagesRange} pages`);
+
+//the ternary operator can be used in a statement, more flexibility because it is an operator but if-else is a whole statement that can not be used in a sentence
+
+//ARROW FUNCTIONS
+
+// 
+const getYear = (str) => str.split('-')[0];
+// for one line of code, we wont be needing the return keyword
+// if we had multiple lines of code, we would use the curly bracesafter the arrow and we will need to manually return the function by saying return str;
+console.log(getYear(publicationDate));
+
