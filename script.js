@@ -150,7 +150,7 @@ const book = getBook(2); //2 is the id
 // const title = book.title;
 // title;
 
-// const author = book.author;
+// const author = book.author;;
 // author;
 // console.log(author, title);
 
